@@ -1,0 +1,50 @@
+<odoo>
+    <data>
+        <!-- Menu creado -->
+        <record id="tech_stock_no_seriado_tree" model="ir.ui.view">
+            <field name="name">tech.stock.no.seriado.tree</field>
+            <field name="model">tech.stock.no.seriado</field>
+            <field name="arch" type="xml">
+                <tree string="TechMovil Stock No Seriados">
+                    <field name="num_material" />
+                    <field name="desc_material" />
+                    <field name="lote" />
+                    <field name="disponible" />
+                    <field name="almacen" />
+                </tree>
+            </field>
+        </record>
+        <record id="tech_stock_no_seriado_form" model="ir.ui.view">
+            <field name="name">tech.stock.no.seriado.form</field>
+            <field name="model">tech.stock.no.seriado</field>
+            <field name="arch" type="xml">
+                <form string="TechMovil Stock No Seriados">
+                    <sheet>
+                        <group>
+                            <field name="contratista" />
+                            <field name="raz_social" />
+                            <field name="cod_opera" />
+                            <field name="centro" />
+                            <field name="sociedad" />
+                            <field name="almacen" />
+                            <field name="num_material" />
+                            <field name="desc_material" />
+                            <field name="elemento_pep" />
+                            <field name="lote" />
+                            <field name="cantidad" />
+                            <field name="unidad" />
+                            <field name="estado" />
+                            <field name="comprometido_orden" />
+                            <field name="disponible" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="action_techmovil_stock_no_seriado" model="ir.actions.act_window">
+            <field name="name">TechMovil Stock No Seriado</field>
+            <field name="res_model">tech.stock.no.seriado</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+acces_tech_consumos_toa,tech.consumos.toa_user,model_tech_consumos_toa,base.group_user,1,1,1,1
+acces_tech_stock_seriado,tech.stock.seriado_user,model_tech_stock_seriado,base.group_user,1,1,1,1
+acces_tech_cuadrillas,tech.cuadrillas_user,model_tech_cuadrillas,base.group_user,1,1,1,1
+acces_tech_stock_no_seriado,tech.stock.no.seriado_user,model_tech_stock_no_seriado,base.group_user,1,1,1,1

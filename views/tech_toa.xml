@@ -1,0 +1,125 @@
+<odoo>
+    <data>
+        <!-- Menu creado -->
+        <record id="tech_consumos_toa_tree" model="ir.ui.view">
+            <field name="name">tech.consumos.toa.tree</field>
+            <field name="model">tech.consumos.toa</field>
+            <field name="arch" type="xml">
+                <tree string="TechMovil Consumos TOA">
+                    <field name="actividad" />
+                    <field name="orden_trabajo" />
+                    <field name="desc_tramite" />
+                    <field name="desc_material" />
+                    <field name="num_serie" />
+                    <field name="cantidad" />
+                </tree>
+            </field>
+        </record>
+        <record id="tech_consumos_toa_form" model="ir.ui.view">
+            <field name="name">tech.consumos.toa.form</field>
+            <field name="model">tech.consumos.toa</field>
+            <field name="arch" type="xml">
+                <form string="TechMovil Consumos TOA">
+                    <sheet>
+                        <group>
+                            <field name="actividad" />
+                            <field name="orden_trabajo" />
+                            <field name="desc_tramite" />
+                            <field name="desc_material" />
+                            <field name="num_serie" />
+                            <field name="cantidad" />                         
+                            <field name="tipo_tramite" />
+                            <field name="tecnologia" />
+                            <field name="material" />
+                            <field name="nim" />
+                            <field name="estado" />
+                            <field name="servicio" />
+                            <field name="desc_servicio" />
+                            <field name="tecnico" />
+                            <field name="tipo_agrupador" />
+                            <field name="orden_compra" />
+                            <field name="centro" />
+                            <field name="desc_centro" />
+                            <field name="almacen" />
+                            <field name="desc_almacen" />
+                            <field name="fecha_act_ofsc" />
+                            <field name="fecha_informado" />
+                            <field name="fecha_ult_mod" />
+                            <field name="a_presup" />
+                            <field name="agrupador_pres_no" />
+                            <field name="agrupador_pres_sm" />
+                            <field name="almacen2" />
+                            <field name="cantidad2" />
+                            <field name="cege" />
+                            <field name="ceontro_contratista" />
+                            <field name="centro_coste" />
+                            <field name="centr_servi" />
+                            <field name="cl_valoracion" />
+                            <field name="clase_movimiento" />
+                            <field name="contratista" />
+                            <field name="contratista2" />
+                            <field name="contrato_marco" />
+                            <field name="costo_servicio" />
+                            <field name="deno_contrct" />
+                            <field name="desc_resultado" />
+                            <field name="desc_almacen2" />
+                            <field name="desc_centro2" />
+                            <field name="desc_material2" />
+                            <field name="doc_dev" />
+                            <field name="doc_material" />
+                            <field name="doc_presup" />
+                            <field name="elemento_pep" />
+                            <field name="error" />
+                            <field name="estatus_act" />
+                            <field name="fecha_cance" />
+                            <field name="fecha_cierre_act" />
+                            <field name="fecha_ejer_sig" />
+                            <field name="fecha_inst" />
+                            <field name="fecha_mod" />
+                            <field name="hora_mod" />
+                            <field name="id_sitio" />
+                            <field name="importe_dev" />
+                            <field name="importe_pep" />
+                            <field name="ind_agrupa_presup" />
+                            <field name="lote" />
+                            <field name="material2" />
+                            <field name="naturaleza_pep" />
+                            <field name="nodo_region" />
+                            <field name="num_paso" />
+                            <field name="num_posicion" />
+                            <field name="num_serie2" />
+                            <field name="num_servicio" />
+                            <field name="operatoria" />
+                            <field name="pais" />
+                            <field name="pos_presup" />
+                            <field name="prec_med_var_cal" />
+                            <field name="pre_med_var" />
+                            <field name="proce" />
+                            <field name="provincia" />
+                            <field name="resultado" />
+                            <field name="sist_legado" />
+                            <field name="sociedad_fi" />
+                            <field name="tecnologia2" />
+                            <field name="tipo_tramite2" />
+                            <field name="tramite_sin_serie" />
+                            <field name="ubic_tecn" />
+                            <field name="unidad_org" />
+                            <field name="usuario" />
+                            <field name="usu_cancela" />
+                            <field name="usu_cierre_act" />
+                            <field name="usu_mod" />
+                            <field name="usu_eje_s" />
+                            <field name="orden_trabajo2" />
+                            <field name="desc_servicio2" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="action_techmovil_consumo_toa" model="ir.actions.act_window">
+            <field name="name">TechMovil Consumos Toa</field>
+            <field name="res_model">tech.consumos.toa</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

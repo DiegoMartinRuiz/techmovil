@@ -1,0 +1,65 @@
+<odoo>
+    <data>
+        <!-- Menu creado -->
+        <record id="tech_stock_seriado_tree" model="ir.ui.view">
+            <field name="name">tech.stock.seriado.tree</field>
+            <field name="model">tech.stock.seriado</field>
+            <field name="arch" type="xml">
+                <tree string="TechMovil Stock Seriados">
+                    <field name="num_material" />
+                    <field name="desc_material" />
+                    <field name="num_serie" />
+                    <field name="mac_address" />
+                    <field name="lote" />
+                    <field name="cantidad" />
+                    <field name="estado_uso" />
+                    <field name="fecha_ingreso" />
+                    <field name="fecha_caducidad" />
+                </tree>
+            </field>
+        </record>
+        <record id="tech_stock_seriado_form" model="ir.ui.view">
+            <field name="name">tech.stock.seriado.form</field>
+            <field name="model">tech.stock.seriado</field>
+            <field name="arch" type="xml">
+                <form string="TechMovil Stock Seriados">
+                    <sheet>
+                        <group>
+                            <field name="contratista" />
+                            <field name="raz_social" />
+                            <field name="cod_opera" />
+                            <field name="centro" />
+                            <field name="sociedad" />
+                            <field name="almacen" />
+                            <field name="num_material" />
+                            <field name="desc_material" />
+                            <field name="num_serie" />
+                            <field name="mac_address" />
+                            <field name="elemento_pep" />
+                            <field name="lote" />
+                            <field name="cantidad" />
+                            <field name="unidad" />
+                            <field name="estado" />
+                            <field name="fecha_ingreso" />
+                            <field name="pedido" />
+                            <field name="fecha_ult_mov" />
+                            <field name="cl_mov" />
+                            <field name="doc_mat" />
+                            <field name="orden" />
+                            <field name="posicion" />
+                            <field name="documento_material" />
+                            <field name="rechazado" />
+                            <field name="pre_aprobdo" />
+                            <field name="aprobado" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="action_techmovil_stock_seriado" model="ir.actions.act_window">
+            <field name="name">TechMovil Stock Seriado</field>
+            <field name="res_model">tech.stock.seriado</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

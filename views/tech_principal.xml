@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+        <menuitem id="menu_customer_techmovil" name="Techmovil" sequence="5"/>
+        <menuitem id="menu_techmovil_stock" parent="menu_customer_techmovil" name="Stock" sequence="1" />
+        <menuitem id="menu_techmovil_movimientos_toa" parent="menu_customer_techmovil" name=" Movimientos TOA" sequence="2" />
+        <menuitem id="menu_techmovil_cuadrillas" parent="menu_customer_techmovil" name="Cuadrillas" sequence="3" />
+        <menuitem action="action_techmovil_stock_seriado" id="menu_techmovil_stock_seriado" parent="menu_techmovil_stock" name="TechMovil Stock Seriado" sequence="1" />
+        <menuitem action="action_techmovil_stock_no_seriado" id="menu_techmovil_stock_no_seriado" parent="menu_techmovil_stock" name="TechMovil Stock No Seriado" sequence="2" />
+        <menuitem action="action_techmovil_consumo_toa" id="menu_techmovil_consumos_toa" parent="menu_techmovil_movimientos_toa" name="TechMovil Consumos TOA" sequence="1" />
+        
+    </data>
+</odoo>
